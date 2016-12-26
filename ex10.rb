@@ -15,3 +15,8 @@ puts backlash_cat
 puts fat_cat
 
 
+format = "%{first}, %{second}"
+
+puts format % {first: tabby_cat, second: fat_cat}
+puts format % {first: '\a', second: '\u112'}
+

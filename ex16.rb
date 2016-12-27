@@ -35,8 +35,9 @@ target.write("\n")
 puts "And finally, we close it."
 target.close
 
-file_read = ARGV.first
+puts 'Enter filename to open'
+file_read = $stdin.gets.chomp
 
 puts "We will now open and read #{file_read}"
-txt = file_read.open
-print txt
+txt = open(file_read)
+print txt.read

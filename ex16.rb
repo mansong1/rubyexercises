@@ -25,12 +25,12 @@ line3 = $stdin.gets.chomp
 
 puts "I'm going to write these to the file."
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+lines = """#{line1}
+#{line2}
+#{line3}
+"""
+
+target.write(lines)
 
 puts "And finally, we close it."
 target.close
@@ -41,3 +41,4 @@ file_read = $stdin.gets.chomp
 puts "We will now open and read #{file_read}"
 txt = open(file_read)
 print txt.read
+txt.close

@@ -41,4 +41,4 @@ file_read = $stdin.gets.chomp
 puts "We will now open and read #{file_read}"
 txt = open(file_read)
 print txt.read
-txt.close
+txt.close 

@@ -9,9 +9,9 @@ indata = in_file.read
 
 puts "The input file is #{indata.length} bytes long"
 
-puts "Does the output file exist? #{File.exist?(to_file)}"
-puts 'Ready, hit RETURN to continue, CRTL-C to abort.'
-$stdin.gets
+#puts "Does the output file exist? #{File.exist?(to_file)}"
+#puts 'Ready, hit RETURN to continue, CRTL-C to abort.'
+#$stdin.gets
 
 out_file = open(to_file, 'w')
 out_file.write(indata)

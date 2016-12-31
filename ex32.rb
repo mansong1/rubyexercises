@@ -17,7 +17,7 @@ elements = []
 (0..5).each do |i|
   puts "adding #{i} to the list."
   # push the i variable to the *end* of the list
-  elements.push(i)
+  elements << i
 end
 
 elements.each {|i| puts "Element was: #{i}"}

@@ -22,3 +22,23 @@ puts "OR State has: #{cities['OR']}"
 puts '-' * 10
 puts "Michigan's abbreviation is: #{states['Michigan']}"
 puts "Florida's abbreviation is: #{states['Florida']}"
+
+puts '-' * 10
+puts "Michigan has: #{cities[states['Michigan']]}"
+puts "Florida has: #{cities[states['Florida']]}"
+
+puts '-' * 10
+states.each do |state, abbrev|
+  puts "#{state} is abbreviated #{abbrev}"
+end
+
+puts '-' * 10
+state = states['Texas']
+
+if !state
+  puts "Sorry, no Texas."
+end
+
+city = cities['TX']
+city ||= 'Does not Exist'
+puts "The city for the state 'TX' is: #{city}"
